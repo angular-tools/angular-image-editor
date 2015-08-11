@@ -1,0 +1,23 @@
+{
+  "name": "Angular image editor",
+  "version": "0.0.1",
+  "authors": [
+    "minutephp <dev@minutephp.com>"
+  ],
+  "description": "Simple AngularJS plugin to rotate and crop images",
+  "main": "src/js/image-editor.js",
+  "keywords": [
+    "angularjs",
+    "image",
+    "editor"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.minutephp.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
