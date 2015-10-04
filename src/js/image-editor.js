@@ -9,7 +9,7 @@
         .factory('$imageEditor', ['$http', 'ngDialog', '$timeout', '$notice', '$q', function ($http, $dialog, $timeout, $notice, $q) {
             var imageEditor = {};
 
-            imageEditor.show = function (imgURL, maxWidth, maxHeight, keepAspect, cb) {
+            imageEditor.show = function (imgURL, maxWidth, maxHeight, freeAspect, cb) {
                 $dialog.open({
                     template: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + '../templates/image-editor.html',
                     className: 'ngdialog-theme-plain custom-width',
@@ -26,8 +26,6 @@
                         $scope.init = function () {
                             $scope.pWidth = maxWidth;
                             $scope.pHeight = maxHeight;
-                            $scope.keepAspect = !!keepAspect;
-                            $scope.cropper.cors = true;
                             $scope.cropper.sourceImage = imgURL;
                             $scope.cropper.croppedImage = null;
                         };
