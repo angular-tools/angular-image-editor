@@ -1,7 +1,6 @@
 {
-  "name": "Angular image editor",
-  "version": "v1.5.6",
-  "authors": [
+  "name": "angular-image-editor",
+    "authors": [
     "minutephp <dev@minutephp.com>"
   ],
   "description": "Simple AngularJS plugin to rotate and crop images",
