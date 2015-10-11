@@ -1,8 +1,6 @@
 (function () {
     'use strict';
 
-    var scripts = document.getElementsByTagName("script");
-    var currentScriptPath = scripts[scripts.length - 1].src;
     var uploaderURL = '/generic/uploader';
 
     angular.module('imageEditor', ['ngDialog', 'angular-img-cropper'])
@@ -11,7 +9,7 @@
 
             imageEditor.show = function (imgURL, maxWidth, maxHeight, freeAspect, cb) {
                 $dialog.open({
-                    template: currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1) + '../templates/image-editor.html',
+                    template: '/static/bower_components/angular-image-editor/src/templates/image-editor.html',
                     className: 'ngdialog-theme-plain custom-width',
                     controller: ['$scope', '$timeout', function ($scope, $timeout) {
                         var rotating = false;
