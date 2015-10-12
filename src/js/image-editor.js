@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var uploaderURL = '/generic/uploader';
+    var uploaderURL = '/generic/data-uploader';
 
     angular.module('imageEditor', ['ngDialog', 'angular-img-cropper'])
         .factory('$imageEditor', ['$http', 'ngDialog', '$timeout', '$notice', '$q', function ($http, $dialog, $timeout, $notice, $q) {
