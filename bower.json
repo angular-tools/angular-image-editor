@@ -4,7 +4,7 @@
     "minutephp <dev@minutephp.com>"
   ],
   "description": "Simple AngularJS plugin to rotate and crop images",
-  "main": "src/js/image-editor.js",
+  "main": ["src/js/image-editor.js", "src/js/angular-img-cropper.js"],
   "keywords": [
     "angularjs",
     "image",
